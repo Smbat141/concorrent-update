@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "b6a4564d-1dfe-40dd-9b02-7d5ea999412b",
+		"name": "sayollo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Ad",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/ad?sdk_version=1.0&session_id=sdflskdhafksdfha&platform=Linux&username=Jack&country_code=CA",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"ad"
+					],
+					"query": [
+						{
+							"key": "sdk_version",
+							"value": "1.0"
+						},
+						{
+							"key": "session_id",
+							"value": "sdflskdhafksdfha"
+						},
+						{
+							"key": "platform",
+							"value": "Linux"
+						},
+						{
+							"key": "username",
+							"value": "Jack"
+						},
+						{
+							"key": "country_code",
+							"value": "CA"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Impression",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"sdk_version\": \"1.0\", \n    \"session_id\": \"sdflskdhafksdfha\",\n    \"platform\": \"Linux\",\n    \"username\": \"user_1\",\n    \"country_code\": \"AM\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/impression?sdk_version=1.0&session_id=sdflskdhafksdfha&platform=Linux&username=Jack&country_code=CA",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"impression"
+					],
+					"query": [
+						{
+							"key": "sdk_version",
+							"value": "1.0"
+						},
+						{
+							"key": "session_id",
+							"value": "sdflskdhafksdfha"
+						},
+						{
+							"key": "platform",
+							"value": "Linux"
+						},
+						{
+							"key": "username",
+							"value": "Jack"
+						},
+						{
+							"key": "country_code",
+							"value": "CA"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Statistics",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/statistics?username=Jack&sdk=1.0",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"statistics"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "Jack"
+						},
+						{
+							"key": "sdk",
+							"value": "1.0"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
